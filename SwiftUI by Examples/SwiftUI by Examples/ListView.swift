@@ -19,12 +19,11 @@ struct ListView: View {
             }
         }
         .navigationBarTitle(Text("Animals"))
-        .foregroundColor(.red)
     }
 }
 
 #if DEBUG
-struct ListView_Previews : PreviewProvider {
+struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
     }

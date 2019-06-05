@@ -18,7 +18,7 @@ struct DetailsView: View {
 }
 
 #if DEBUG
-struct DetailsView_Previews : PreviewProvider {
+struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
         DetailsView(animal: .init(name: "🦘"))
     }
