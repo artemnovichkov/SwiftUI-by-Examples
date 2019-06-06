@@ -16,7 +16,7 @@
 SwiftUI is a simple way to build user interfaces across all Apple platforms with the power of Swift. I'm going to fill the repo with useful examples of SwiftUI. Stay tuned!
 
 <p align="center">
-  <img src=".github/example.png" width="480" max-width="90%" alt="SwiftUI" />
+  <img src=".github/example.png" width="300" max-width="90%" alt="SwiftUI" />
 </p>
 
 ## Author
