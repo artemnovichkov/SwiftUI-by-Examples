@@ -12,7 +12,12 @@
     <img src="https://img.shields.io/badge/Swift-5.1-green.svg" alt="Swift 5.1" />
   </a>
 </p>
+
 SwiftUI is a simple way to build user interfaces across all Apple platforms with the power of Swift. I'm going to fill the repo with useful examples of SwiftUI. Stay tuned!
+
+<p align="center">
+  <img src=".github/example.png" width="480" max-width="90%" alt="SwiftUI" />
+</p>
 
 ## Author
 

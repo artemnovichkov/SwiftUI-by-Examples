@@ -12,13 +12,31 @@ struct ListView: View {
 
     var body: some View {
         NavigationView {
-            List(Animal.all.identified(by: \.name)) { animal in
-                NavigationButton(destination: DetailsView(animal: animal)) {
-                    Text(animal.name)
+            List(Video.all.identified(by: \.title)) { animal in
+                AnimalCell(video: animal)
+            }
+            .navigationBarTitle(Text("WWDC 2019"))
+        }
+    }
+}
+
+struct AnimalCell: View {
+
+    let video: Video
+
+    var body: some View {
+        NavigationButton(destination: DetailsView(video: video)) {
+            HStack {
+                Image(video.thumbnail)
+                    .frame(width: 30, height: 30, alignment: .center)
+                    .cornerRadius(8)
+                VStack(alignment: .leading) {
+                    Text(video.title)
+                    Text(video.description)
+                        .font(.subheadline)
                 }
             }
         }
-        .navigationBarTitle(Text("Animals"))
     }
 }
 

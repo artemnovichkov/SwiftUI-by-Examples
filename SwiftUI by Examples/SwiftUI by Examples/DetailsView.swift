@@ -10,17 +10,22 @@ import SwiftUI
 
 struct DetailsView: View {
 
-    let animal: Animal
+    let video: Video
 
     var body: some View {
-        Text(animal.name)
+        Image(video.thumbnail)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .navigationBarTitle(Text(video.title), displayMode: .inline)
     }
 }
 
 #if DEBUG
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView(animal: .init(name: "🦘"))
+        NavigationView {
+            DetailsView(video: Video.all[0])
+        }
     }
 }
 #endif
