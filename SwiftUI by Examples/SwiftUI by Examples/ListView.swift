@@ -7,34 +7,49 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ListView: View {
 
     @State var showingAlert = false
 
+    @ObjectBinding var store: VideoStore = .init()
+
     var body: some View {
         NavigationView {
-            List(Video.all.identified(by: \.title)) { animal in
-                AnimalCell(video: animal)
+            List {
+                Section {
+                    Button(action: addRandomVideo) {
+                        Text("Add random video")
+                    }
+                }
+                Section {
+                    ForEach(store.videos) { video in
+                        VideoCell(video: video)
+                        }
+                        .onDelete(perform: delete)
+                }
                 }
                 .navigationBarTitle(Text("WWDC 2019"))
-                .navigationBarItems(trailing:
-                    Button(action: {
-                        self.showingAlert = true
-                    }) {
-                        Image(systemName: "info.circle")
-                    }
-                    .presentation($showingAlert) {
-                        Alert(title: Text("WWDC 2019"),
-                                message: Text("Tap on video to see detail information"),
-                                dismissButton: .default(Text("Got it!")))
-                    }
-            )
+                .navigationBarItems(trailing: EditButton())
+                .listStyle(.grouped)
+        }
+    }
+
+    func addRandomVideo() {
+        if let video = store.videos.randomElement() {
+            store.videos.append(video)
+        }
+    }
+
+    func delete(at offsets: IndexSet) {
+        for offset in offsets {
+            store.videos.remove(at: offset)
         }
     }
 }
 
-struct AnimalCell: View {
+struct VideoCell: View {
 
     let video: Video
 
@@ -48,7 +63,8 @@ struct AnimalCell: View {
                     Text(video.title)
                     Text(video.description)
                         .font(.subheadline)
-                }
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             }
         }
     }

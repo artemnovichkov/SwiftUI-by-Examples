@@ -6,8 +6,23 @@
 //  Copyright © 2019 Artem Novichkov. All rights reserved.
 //
 
-struct Video {
+import SwiftUI
+import Combine
 
+class VideoStore: BindableObject {
+
+    var videos: [Video] = Video.all {
+        didSet {
+            didChange.send(())
+        }
+    }
+
+    var didChange = PassthroughSubject<Void, Never>()
+}
+
+struct Video: Identifiable {
+
+    let id = UUID()
     let title: String
     let description: String
     let thumbnail: String

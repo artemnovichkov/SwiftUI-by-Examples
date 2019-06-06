@@ -10,11 +10,26 @@ import SwiftUI
 
 struct DetailsView: View {
 
+    @State private var zoomed = false
+
     let video: Video
 
     var body: some View {
-        Image(video.thumbnail)
-            .navigationBarTitle(Text(video.title), displayMode: .inline)
+        VStack {
+            Image(video.thumbnail)
+                .resizable()
+                .aspectRatio(contentMode: zoomed ? .fill : .fit)
+                .tapAction {
+                    withAnimation {
+                        self.zoomed.toggle()
+                    }
+                }
+                .navigationBarTitle(Text(video.title), displayMode: .inline)
+            Text("Overview")
+                .font(.title)
+            Text(video.description)
+                .lineLimit(0)
+        }
     }
 }
 
