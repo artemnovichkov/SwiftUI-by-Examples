@@ -14,8 +14,6 @@ struct DetailsView: View {
 
     var body: some View {
         Image(video.thumbnail)
-            .resizable()
-            .aspectRatio(contentMode: .fit)
             .navigationBarTitle(Text(video.title), displayMode: .inline)
     }
 }

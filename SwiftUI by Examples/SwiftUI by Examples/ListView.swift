@@ -10,12 +10,26 @@ import SwiftUI
 
 struct ListView: View {
 
+    @State var showingAlert = false
+
     var body: some View {
         NavigationView {
             List(Video.all.identified(by: \.title)) { animal in
                 AnimalCell(video: animal)
-            }
-            .navigationBarTitle(Text("WWDC 2019"))
+                }
+                .navigationBarTitle(Text("WWDC 2019"))
+                .navigationBarItems(trailing:
+                    Button(action: {
+                        self.showingAlert = true
+                    }) {
+                        Image(systemName: "info.circle")
+                    }
+                    .presentation($showingAlert) {
+                        Alert(title: Text("WWDC 2019"),
+                                message: Text("Tap on video to see detail information"),
+                                dismissButton: .default(Text("Got it!")))
+                    }
+            )
         }
     }
 }
