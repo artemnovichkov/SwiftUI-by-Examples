@@ -1,7 +1,7 @@
 # SwiftUI by Examples
 
 <p align="center">
-  <img src=".github/logo.png" width="480" max-width="90%" alt="SwiftUI" />
+  <img src=".github/logo.png" width="300" max-width="90%" alt="SwiftUI" />
 </p>
 
 <p align="center">
