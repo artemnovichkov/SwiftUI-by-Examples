@@ -26,6 +26,7 @@ struct Video: Identifiable {
     let title: String
     let description: String
     let thumbnail: String
+    var isFavorite: Bool = false
 
     static let all: [Video] = [.init(title: "Implementing Dark Mode on iOS",
                                      description: "Hear from the UIKit engineering team about the principles and concepts that anchor Dark Mode on iOS. Get introduced to the principles of enhancing your app with this new appearance using dynamic colors and images, and add an experience that people are sure to love.",

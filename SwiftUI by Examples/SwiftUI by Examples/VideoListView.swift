@@ -9,23 +9,28 @@
 import SwiftUI
 import Combine
 
-struct ListView: View {
+struct VideoListView: View {
 
-    @State var showingAlert = false
+    @State var showFavoritesOnly = false
 
-    @ObjectBinding var store: VideoStore = .init()
+    @EnvironmentObject private var store: VideoStore
 
     var body: some View {
         NavigationView {
             List {
                 Section {
+                    Toggle(isOn: $showFavoritesOnly) {
+                        Text("Favorites only")
+                    }
                     Button(action: addRandomVideo) {
                         Text("Add random video")
                     }
                 }
                 Section {
                     ForEach(store.videos) { video in
-                        VideoCell(video: video)
+                        if !self.showFavoritesOnly || video.isFavorite {
+                            VideoCell(video: video)
+                        }
                         }
                         .onDelete(perform: delete)
                 }
@@ -49,31 +54,10 @@ struct ListView: View {
     }
 }
 
-struct VideoCell: View {
-
-    let video: Video
-
-    var body: some View {
-        NavigationButton(destination: DetailsView(video: video)) {
-            HStack {
-                Image(video.thumbnail)
-                    .frame(width: 30, height: 30, alignment: .center)
-                    .cornerRadius(8)
-                VStack(alignment: .leading) {
-                    Text(video.title)
-                    Text(video.description)
-                        .font(.subheadline)
-                    }
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-            }
-        }
-    }
-}
-
 #if DEBUG
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        VideoListView()
     }
 }
 #endif
