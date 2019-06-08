@@ -24,7 +24,6 @@ struct VideoCell: View {
                     Text(video.description)
                         .font(.subheadline)
                     }
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 if video.isFavorite {
                     Image(systemName: "star.fill")
                         .foregroundColor(.yellow)

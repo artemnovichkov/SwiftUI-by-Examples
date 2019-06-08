@@ -47,7 +47,8 @@ struct VideoDetailsView: View {
                 }
             }
             Text(video.description)
-                .lineLimit(0)
+                .lineLimit(nil)
+                .padding()
         }
     }
 }
