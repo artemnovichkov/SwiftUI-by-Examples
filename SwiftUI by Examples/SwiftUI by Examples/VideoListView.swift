@@ -36,7 +36,7 @@ struct VideoListView: View {
                 }
                 }
                 .navigationBarTitle(Text("WWDC 2019"))
-                .navigationBarItems(trailing: EditButton())
+                .navigationBarItems(leading: PresentationButton(Image(systemName: "info"), destination: BadgeView()), trailing: EditButton())
                 .listStyle(.grouped)
         }
     }
