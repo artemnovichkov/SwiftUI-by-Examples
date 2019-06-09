@@ -22,6 +22,9 @@ struct ExampleListView: View {
                     NavigationButton(destination: ButtonsView()) {
                         ExampleCell(title: "Buttons", subtitle: "Showing buttons")
                     }
+                    NavigationButton(destination: SliderView()) {
+                        ExampleCell(title: "Slider", subtitle: "Showing slider")
+                    }
                 }
                 Section(header: Text("Others")) {
                     NavigationButton(destination: VideoListView().environmentObject(VideoStore())) {

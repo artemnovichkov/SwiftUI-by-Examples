@@ -25,6 +25,7 @@ SwiftUI is a simple way to build user interfaces across all Apple platforms with
 - Texts
 - Text fields
 - Buttons
+- Slider
 - Editable list
 - Drawing shapes
 
