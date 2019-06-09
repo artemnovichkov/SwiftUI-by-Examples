@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		068FA18722AD716100FFF648 /* ExampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FA18622AD716100FFF648 /* ExampleListView.swift */; };
+		068FA18922AD717E00FFF648 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FA18822AD717E00FFF648 /* ExampleCell.swift */; };
+		068FA18B22AD73D300FFF648 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FA18A22AD73D300FFF648 /* TextView.swift */; };
+		068FA18D22AD765300FFF648 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FA18C22AD765300FFF648 /* TextFieldView.swift */; };
+		068FA18F22AD80CD00FFF648 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FA18E22AD80CD00FFF648 /* ButtonsView.swift */; };
 		06E548C022ABA53600794057 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E548BF22ABA53600794057 /* VideoCell.swift */; };
 		06E548C222ABA5F000794057 /* VideoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E548C122ABA5F000794057 /* VideoDetailsView.swift */; };
 		06E548C422ABAB1E00794057 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E548C322ABAB1E00794057 /* BadgeView.swift */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		068FA18622AD716100FFF648 /* ExampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleListView.swift; sourceTree = "<group>"; };
+		068FA18822AD717E00FFF648 /* ExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
+		068FA18A22AD73D300FFF648 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		068FA18C22AD765300FFF648 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		068FA18E22AD80CD00FFF648 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		06E548BF22ABA53600794057 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		06E548C122ABA5F000794057 /* VideoDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailsView.swift; sourceTree = "<group>"; };
 		06E548C322ABAB1E00794057 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
@@ -80,6 +90,11 @@
 				06FB7FB922A822C700E0B8C5 /* LaunchScreen.storyboard */,
 				06FB7FBC22A822C700E0B8C5 /* Info.plist */,
 				06FB7FB622A822C700E0B8C5 /* Preview Content */,
+				068FA18622AD716100FFF648 /* ExampleListView.swift */,
+				068FA18822AD717E00FFF648 /* ExampleCell.swift */,
+				068FA18A22AD73D300FFF648 /* TextView.swift */,
+				068FA18C22AD765300FFF648 /* TextFieldView.swift */,
+				068FA18E22AD80CD00FFF648 /* ButtonsView.swift */,
 			);
 			path = "SwiftUI by Examples";
 			sourceTree = "<group>";
@@ -172,13 +187,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068FA18922AD717E00FFF648 /* ExampleCell.swift in Sources */,
+				068FA18B22AD73D300FFF648 /* TextView.swift in Sources */,
+				068FA18D22AD765300FFF648 /* TextFieldView.swift in Sources */,
 				06E548C622ABAB6A00794057 /* HexagonParameters.swift in Sources */,
 				06FB7FAF22A822C600E0B8C5 /* AppDelegate.swift in Sources */,
 				06E548C422ABAB1E00794057 /* BadgeView.swift in Sources */,
+				068FA18F22AD80CD00FFF648 /* ButtonsView.swift in Sources */,
 				06FB7FB122A822C600E0B8C5 /* SceneDelegate.swift in Sources */,
 				06FB7FB322A822C600E0B8C5 /* VideoListView.swift in Sources */,
 				06E548C222ABA5F000794057 /* VideoDetailsView.swift in Sources */,
 				06FB7FC722A8269800E0B8C5 /* Video.swift in Sources */,
+				068FA18722AD716100FFF648 /* ExampleListView.swift in Sources */,
 				06E548C022ABA53600794057 /* VideoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
