@@ -12,18 +12,32 @@ struct ExampleListView: View {
     var body: some View {
         NavigationView {
             List {
-                Section(header: Text("Base elements")) {
+                Section(header: Text("Controls")) {
                     NavigationButton(destination: TextView()) {
-                        ExampleCell(title: "Texts", subtitle: "Showing rish texts")
+                        ExampleCell(title: "Texts", subtitle: "A view that displays one or more lines of read-only text.")
                     }
                     NavigationButton(destination: TextFieldView()) {
-                        ExampleCell(title: "Text fields", subtitle: "Showing text fields")
+                        ExampleCell(title: "Text fields", subtitle: "A control that displays an editable text interface.")
                     }
                     NavigationButton(destination: ButtonsView()) {
-                        ExampleCell(title: "Buttons", subtitle: "Showing buttons")
+                        ExampleCell(title: "Buttons", subtitle: "A control that performs an action when triggered.")
+                    }
+                }
+                Section(header: Text("Value selectors")) {
+                    NavigationButton(destination: ToggleView()) {
+                        ExampleCell(title: "Toggle", subtitle: "A control that toggles between on and off states.")
+                    }
+                    NavigationButton(destination: DatePickerView()) {
+                        ExampleCell(title: "DatePicker", subtitle: "A control for selecting an absolute date.")
                     }
                     NavigationButton(destination: SliderView()) {
-                        ExampleCell(title: "Slider", subtitle: "Showing slider")
+                        ExampleCell(title: "Slider", subtitle: "A control for selecting a value from a bounded linear range of values.")
+                    }
+                    NavigationButton(destination: StepperView()) {
+                        ExampleCell(title: "Stepper", subtitle: "A control used to perform semantic increment and decrement actions.")
+                    }
+                    NavigationButton(destination: SegmentedControlView()) {
+                        ExampleCell(title: "Segmented Control", subtitle: "A control for selecting from a set of options.")
                     }
                 }
                 Section(header: Text("Others")) {
