@@ -41,6 +41,9 @@ struct ExampleListView: View {
                     }
                 }
                 Section(header: Text("Others")) {
+                    NavigationButton(destination: AlertView()) {
+                        ExampleCell(title: "Alert", subtitle: "A container for an alert presentation.")
+                    }
                     NavigationButton(destination: VideoListView().environmentObject(VideoStore())) {
                         ExampleCell(title: "List", subtitle: "Example of editable list")
                     }

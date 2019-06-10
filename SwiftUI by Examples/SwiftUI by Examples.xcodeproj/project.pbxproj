@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		060DBBEB22AE7E2B00D3A09F /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DBBEA22AE7E2B00D3A09F /* StepperView.swift */; };
 		060DBBED22AE7EE600D3A09F /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DBBEC22AE7EE600D3A09F /* SegmentedControlView.swift */; };
+		060DBBEF22AE80DC00D3A09F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DBBEE22AE80DC00D3A09F /* AlertView.swift */; };
 		068FA18722AD716100FFF648 /* ExampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FA18622AD716100FFF648 /* ExampleListView.swift */; };
 		068FA18922AD717E00FFF648 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FA18822AD717E00FFF648 /* ExampleCell.swift */; };
 		068FA18B22AD73D300FFF648 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FA18A22AD73D300FFF648 /* TextView.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		060DBBEA22AE7E2B00D3A09F /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 		060DBBEC22AE7EE600D3A09F /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
+		060DBBEE22AE80DC00D3A09F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		068FA18622AD716100FFF648 /* ExampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleListView.swift; sourceTree = "<group>"; };
 		068FA18822AD717E00FFF648 /* ExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
 		068FA18A22AD73D300FFF648 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				068FA19422AE7B7000FFF648 /* DatePickerView.swift */,
 				060DBBEA22AE7E2B00D3A09F /* StepperView.swift */,
 				060DBBEC22AE7EE600D3A09F /* SegmentedControlView.swift */,
+				060DBBEE22AE80DC00D3A09F /* AlertView.swift */,
 			);
 			path = "SwiftUI by Examples";
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				068FA18922AD717E00FFF648 /* ExampleCell.swift in Sources */,
+				060DBBEF22AE80DC00D3A09F /* AlertView.swift in Sources */,
 				060DBBED22AE7EE600D3A09F /* SegmentedControlView.swift in Sources */,
 				068FA18B22AD73D300FFF648 /* TextView.swift in Sources */,
 				068FA18D22AD765300FFF648 /* TextFieldView.swift in Sources */,
