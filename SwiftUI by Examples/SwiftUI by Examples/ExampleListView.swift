@@ -44,6 +44,9 @@ struct ExampleListView: View {
                     NavigationButton(destination: AlertView()) {
                         ExampleCell(title: "Alert", subtitle: "A container for an alert presentation.")
                     }
+                    NavigationButton(destination: GestureView()) {
+                        ExampleCell(title: "Gestures", subtitle: "Use gesture modifiers to add interactivity to your app.")
+                    }
                     NavigationButton(destination: VideoListView().environmentObject(VideoStore())) {
                         ExampleCell(title: "List", subtitle: "Example of editable list")
                     }

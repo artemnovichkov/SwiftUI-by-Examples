@@ -32,6 +32,7 @@ SwiftUI is a simple way to build user interfaces across all Apple platforms with
 - Stepper
 - Segmented Control
 - Alert
+- Gestures
 - Action sheet
 - Editable list
 - Drawing shapes
