@@ -47,6 +47,9 @@ struct ExampleListView: View {
                     NavigationButton(destination: GestureView()) {
                         ExampleCell(title: "Gestures", subtitle: "Use gesture modifiers to add interactivity to your app.")
                     }
+                    NavigationButton(destination: AnimationView()) {
+                        ExampleCell(title: "Animations", subtitle: "Animate views.")
+                    }
                     NavigationButton(destination: VideoListView().environmentObject(VideoStore())) {
                         ExampleCell(title: "List", subtitle: "Example of editable list")
                     }

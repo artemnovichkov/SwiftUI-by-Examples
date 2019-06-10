@@ -11,6 +11,7 @@
 		060DBBED22AE7EE600D3A09F /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DBBEC22AE7EE600D3A09F /* SegmentedControlView.swift */; };
 		060DBBEF22AE80DC00D3A09F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DBBEE22AE80DC00D3A09F /* AlertView.swift */; };
 		060DBBF122AE891300D3A09F /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DBBF022AE891300D3A09F /* GestureView.swift */; };
+		060DBBF322AEB7A600D3A09F /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DBBF222AEB7A600D3A09F /* AnimationView.swift */; };
 		068FA18722AD716100FFF648 /* ExampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FA18622AD716100FFF648 /* ExampleListView.swift */; };
 		068FA18922AD717E00FFF648 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FA18822AD717E00FFF648 /* ExampleCell.swift */; };
 		068FA18B22AD73D300FFF648 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068FA18A22AD73D300FFF648 /* TextView.swift */; };
@@ -37,6 +38,7 @@
 		060DBBEC22AE7EE600D3A09F /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
 		060DBBEE22AE80DC00D3A09F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		060DBBF022AE891300D3A09F /* GestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
+		060DBBF222AEB7A600D3A09F /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		068FA18622AD716100FFF648 /* ExampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleListView.swift; sourceTree = "<group>"; };
 		068FA18822AD717E00FFF648 /* ExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
 		068FA18A22AD73D300FFF648 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				060DBBEC22AE7EE600D3A09F /* SegmentedControlView.swift */,
 				060DBBEE22AE80DC00D3A09F /* AlertView.swift */,
 				060DBBF022AE891300D3A09F /* GestureView.swift */,
+				060DBBF222AEB7A600D3A09F /* AnimationView.swift */,
 			);
 			path = "SwiftUI by Examples";
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				06FB7FC722A8269800E0B8C5 /* Video.swift in Sources */,
 				068FA18722AD716100FFF648 /* ExampleListView.swift in Sources */,
 				06E548C022ABA53600794057 /* VideoCell.swift in Sources */,
+				060DBBF322AEB7A600D3A09F /* AnimationView.swift in Sources */,
 				068FA19322AE7A9900FFF648 /* ToggleView.swift in Sources */,
 				068FA19122AD86DA00FFF648 /* SliderView.swift in Sources */,
 			);

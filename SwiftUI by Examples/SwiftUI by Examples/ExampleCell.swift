@@ -17,6 +17,7 @@ struct ExampleCell : View {
         VStack(alignment: .leading) {
             Text(title)
             Text(subtitle)
+                .font(.subheadline)
         }
     }
 }
