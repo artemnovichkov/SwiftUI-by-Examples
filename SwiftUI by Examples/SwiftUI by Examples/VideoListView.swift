@@ -31,12 +31,12 @@ struct VideoListView: View {
                         if !self.showFavoritesOnly || video.isFavorite {
                             VideoCell(video: video)
                         }
-                        }
+                    }
                         .onDelete(perform: delete)
                 }
-                }
+            }
                 .navigationBarTitle(Text("WWDC 2019"))
-                .navigationBarItems(leading: PresentationButton(Image(systemName: "info"), destination: BadgeView()), trailing: EditButton())
+                .navigationBarItems(leading: PresentationButton(destination: BadgeView(), label: { Image(systemName: "info") }))
                 .listStyle(.grouped)
         }
     }

@@ -14,10 +14,10 @@ struct ButtonsView: View {
 
         VStack(spacing: 16) {
             Button(action: {
-                print("Tap")
-            }) {
+                print("tap")
+            }, label: {
                 Text("Tap")
-            }
+            })
                 .padding()
                 .foregroundColor(.white)
                 .background(Color.green, cornerRadius: 12)
@@ -27,7 +27,9 @@ struct ButtonsView: View {
                 .padding()
                 .foregroundColor(.white)
                 .background(Color.green, cornerRadius: 12)
-            PresentationButton(Text("Presentation"), destination: TextFieldView())
+            PresentationButton(destination: TextFieldView(), label: {
+                Text("Presentation")
+            })
                 .padding()
                 .foregroundColor(.white)
                 .background(Color.green, cornerRadius: 12)
